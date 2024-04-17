@@ -23,6 +23,32 @@ body {
 	-ms-text-size-adjust: none;
 	margin: 0;
 }
+.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto
+}
+/* whatsapp style */
+.container #whatsapp {
+	position: absolute;
+	z-index: 999;
+}
+
+#whatsapp a {
+	position: fixed;
+	width: 70px;
+	height: 70px;
+	bottom: 50px;
+	right:50px;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: 2px 2px 3px #999;
+}
+/* whatsapp style */
 img { border-style: none; }
 a {
 	text-decoration: none;
@@ -1118,3 +1144,15 @@ ol .num {
         background-size: contain;
       }
     }
+	
+	@media only screen  and (max-width: 800px) {
+		/* whatsapp mobile style */
+	  #whatsapp a {
+		  width: 40px;
+		  height: 40px;
+		  bottom: 60px;
+		  right: 50px;
+		  box-shadow: 2px 2px 3px #999;
+		}
+
+	}

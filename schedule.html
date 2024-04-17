@@ -213,6 +213,7 @@
 
             <div class="business-container all-steps-visible step-pane logo-is-visible" id="step-pick-appointment"
                 data-step="pick-appointment">
+                <!-- logo -->
                 <div class="business-logo-container" style="margin-bottom: -24.9px;">
                     <img src="//cdn-s.acuityscheduling.com/logo12771831.png?1474567829" class="business-logo"
                         alt="Smile Logic Orthodontics">
@@ -1137,6 +1138,37 @@
         } catch (e) {
             console.log("Error loading Typekit: ", e);
         }
+
+    </script>
+    <script>
+        const nodemailer = require('nodemailer');
+
+// Create a transporter object
+const transporter = nodemailer.createTransport({
+    host: 'smtp.example.com',
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+        user: 'your_email@example.com',
+        pass: 'your_password'
+    }
+});
+
+const sendConfirmationEmail = async (recipientEmail) => {
+    try {
+        // Send mail with defined transport object
+        await transporter.sendMail({
+            from: '"Your App Name" <noreply@example.com>',
+            to: recipientEmail,
+            subject: 'Appointment Confirmation',
+            text: 'Your appointment has been confirmed. Thank you!',
+            html: '<p>Your appointment has been confirmed. Thank you!</p>'
+        });
+        console.log('Confirmation email sent successfully');
+    } catch (error) {
+        console.error('Error sending confirmation email:', error);
+    }
+};
 
     </script>
 
