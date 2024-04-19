@@ -838,6 +838,16 @@ padding:10px;
 	height:240 ;
 }
  */
+ .full-width  {
+	width: 100%;
+	transition: 0.3s ease; /* Animation */
+  }
+  
+  .full-width :hover img{
+	/* transition: all 1s ease-in-out; */
+	transform: scale(1.1); 
+	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2)  /* Safari & Android Browser */
     {
@@ -1132,6 +1142,7 @@ h3 {
 }
 
 }
+
 /*
 ol li:before,
 ol .num {
