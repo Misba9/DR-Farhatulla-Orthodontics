@@ -828,9 +828,16 @@ padding:10px;
 .acuityscheduling {
 	margin: -30px 0 0 0;
 }
-
-
-
+/* 
+#map{
+	width:710 !important;
+	height:240 !important;
+}
+.google-maps iframe{
+	width:710 ;
+	height:240 ;
+}
+ */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2)  /* Safari & Android Browser */
     {
