@@ -908,7 +908,7 @@ padding:10px;
 }
 .full-width:hover{
 	/* color: rgba(136, 34, 34, 0.2); */
-	background-color: rgba(199, 140, 31, 0.877);
+	background-color: rgba(199, 140, 31, 0.877) !important;
   }
   
   .full-width:hover .bottom {
