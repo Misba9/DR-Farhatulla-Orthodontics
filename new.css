@@ -670,13 +670,13 @@ div.hero, div.hero h2, div.hero  h3  {
     content: none;
 }
 
-.full-width{
+/* .full-width{
 	margin: 0 0 28px 0;
-}
+} */
 .full-width img {
-max-width:100%;
+/* max-width:100%;
 width:100%;
-height:auto;
+height:auto; */
 margin: 20px auto;
 display: block;
 }
@@ -828,26 +828,108 @@ padding:10px;
 .acuityscheduling {
 	margin: -30px 0 0 0;
 }
-/* 
-#map{
-	width:710 !important;
-	height:240 !important;
-}
-.google-maps iframe{
-	width:710 ;
-	height:240 ;
-}
- */
- .full-width  {
+
+  
+  /* .full-width :hover img{
+	transition: all 1s ease-in-out;
+	transform: scale(1.3); 
+	backface-visibility: hidden; */
+	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  /* } */
+  /* .full-width :hover .bottom{
+	opacity: 1;
+  }
+   .bottom {
+	opacity: 0;
+  }
+
+  
+  .im {
+	opacity: 1;
+	display: block;
 	width: 100%;
-	transition: 0.3s ease; /* Animation */
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
   }
   
-  .full-width :hover img{
-	/* transition: all 1s ease-in-out; */
-	transform: scale(1.1); 
-	/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  .bottom {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
   }
+  
+  .container:hover .image {
+	opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+	opacity: 1;
+  }
+   */
+
+/* new */
+.full-width {
+	position: relative;
+	overflow: hidden;
+	
+  }
+  
+  .image-a {
+	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+  }
+  
+  .bottom {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 90%;
+	left: 40%;
+	transform: translate(-90%, -50%);
+	-ms-transform: translate(-90%, -50%);
+	text-align: center;
+  }
+  
+  .full-width:hover .image-a {
+	opacity: 0.3 ;
+	transition: all 1s ease-in-out ;
+	/* background-color: #006699; */
+	transform: scale(1.3); 
+}
+.full-width:hover{
+	color: rgba(136, 34, 34, 0.2);
+	
+	background-color: #36e4a4;
+  }
+  
+  .full-width:hover .bottom {
+	opacity: 1;
+  }
+  
+  .name {
+	color: black;
+	font-size: 16px;
+	font-weight: 700;
+	/* padding: 16px 32px; */
+  }
+
+  /* .text {
+	background-color: #04AA6D;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+  } */
+
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2)  /* Safari & Android Browser */
     {
